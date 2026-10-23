@@ -94,6 +94,25 @@
     tr:hover {
       background-color: rgba(255, 215, 0, 0.2); 
     }
+    #instructionsButton {
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  z-index: 30;
+  padding: 8px 18px;
+  font-size: 1em;
+  border: 2px solid #FFD700;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #FFD700;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#instructionsButton:hover {
+  background-color: rgba(255, 215, 0, 0.25);
+  color: #ffffff;
+}
 
     img.player-image {
       width: 100px;
@@ -190,6 +209,7 @@
             <div class="table-buttons">
               <button id="startButtonFooter">Start</button>
               <button id="skipButtonFooter">Skip</button>
+              <button id="instructionsButton" onclick="window.location.href='instructions.html'">Instructions</button>
             </div>
           </td>
         </tr>
